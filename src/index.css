@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.hero{
+    background-image: url("./assets/images/profilepicture.jpeg");
+    background-position-y: 12%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

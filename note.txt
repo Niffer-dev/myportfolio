@@ -1,0 +1,29 @@
+import React from 'react'
+import {skills} from '../skillData'
+
+const Skills = () => {
+    return(
+    <div className="max-w-xl mx-auto pb-20">
+        <h1 className="text-2xl font-bold py-10 text-center">My Skills</h1>
+        <div  className="flex flex-col gap-5">
+            {
+                skills.map((skill, index) => (
+                    <div key={index}>
+                        <div className="flex justify-between text-sm font-medium">
+                            <h2>{skill.skillName}</h2>
+                            <div value={`${skill.progress}`} max={"100"}></div>
+                        </div>
+
+                        <div className="w-full bg-gray-200 rounded-full h-3">
+                            <div className="bg-blue-600 h-3 rounded-full transition-all duration-500" style={{ width: `${skill.progress}%` }} />
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+
+    )
+}
+
+export default Skills

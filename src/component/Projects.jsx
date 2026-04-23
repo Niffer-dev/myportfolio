@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import portfolioFrame from "../assets/images/portfolioFrame.png"
 
 const projects = [
   {
     title: "My Portfolio",
     description: "My personal developer portfolio showcasing my projects and skills.",
-    image: "/images/portfolio.png",
+    image: portfolioFrame,
     tech: ["React", "Tailwind", "JavaScript"],
     linkLive: "https://niffer-portfolio.netlify.app/",
     linkCode: "https://github.com/Niffer-dev/myportfolio",
